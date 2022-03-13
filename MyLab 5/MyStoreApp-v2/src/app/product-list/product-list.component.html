@@ -1,0 +1,17 @@
+<h2>All models. Take your pick.</h2>
+<ul>
+    <li *ngFor="let category of categoryType; let i = index;">
+        <button (click)="selectCategory(i)">
+            {{category}}
+        </button>
+    </li>
+</ul>
+
+<app-product-item [showingCategory]=showingCategory></app-product-item>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
